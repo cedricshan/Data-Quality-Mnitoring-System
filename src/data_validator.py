@@ -3,10 +3,26 @@ import numpy as np
 from scipy.stats import zscore
 
 def check_missing_values(df: pd.DataFrame, threshold: float):
+
+############################################################################################################
+    # print("############################################")
+    # print("threshold")
+    # print(threshold)
+    # print("############################################")
+############################################################################################################
+
     missing_ratio = df.isnull().mean()
     return missing_ratio[missing_ratio > threshold]
 
 def check_outliers(df: pd.DataFrame, threshold: float) -> pd.DataFrame:
+
+############################################################################################################
+    # print("############################################")
+    # print("threshold")
+    # print(threshold)
+    # print("############################################")
+############################################################################################################
+
 
 ############################################################################################################
     # print("############################################")
@@ -28,8 +44,15 @@ def check_outliers(df: pd.DataFrame, threshold: float) -> pd.DataFrame:
 ############################################################################################################
 
     # Apply zscore to numeric columns
-    z_scores = numeric_df.apply(zscore)
-    
+    z_scores = numeric_df.apply(lambda col: zscore(col, nan_policy='omit'))
+
+############################################################################################################
+    # print("############################################")
+    # print(z_scores)
+    # print("############################################")
+############################################################################################################
+  
+
     # Identify outliers based on the threshold
     # Here, we consider a value as an outlier if its z-score is above 3 or below -3
     outliers_mask = (z_scores.abs() > threshold)
