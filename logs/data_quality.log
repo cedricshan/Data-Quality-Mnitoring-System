@@ -4,3 +4,33 @@ dtype: float64, 'outliers':     col1  col2   col3
 0    1.0   2.0    3.0
 7   22.0  23.0  100.0
 10  31.0  32.0   33.0}
+2024-07-19 15:19:08,487:WARNING:Anomalies detected: {'missing_values': col2    0.272727
+col3    0.090909
+dtype: float64, 'outliers':     col1  col2   col3
+0    1.0   2.0    3.0
+7   22.0  23.0  100.0
+10  31.0  32.0   33.0}
+2024-07-19 15:24:07,226:WARNING:Anomalies detected: {'missing_values': col2    0.272727
+col3    0.090909
+dtype: float64, 'outliers':     col1  col2   col3
+0    1.0   2.0    3.0
+7   22.0  23.0  100.0
+10  31.0  32.0   33.0}
+2024-07-19 15:24:18,753:WARNING:Anomalies detected: {'missing_values': col2    0.272727
+col3    0.090909
+dtype: float64, 'outliers':     col1  col2   col3
+0    1.0   2.0    3.0
+7   22.0  23.0  100.0
+10  31.0  32.0   33.0}
+2024-07-19 15:25:09,984:WARNING:Anomalies detected: {'missing_values': col2    0.272727
+col3    0.090909
+dtype: float64, 'outliers':     col1  col2   col3
+0    1.0   2.0    3.0
+7   22.0  23.0  100.0
+10  31.0  32.0   33.0}
+2024-07-19 15:48:07,310:WARNING:Anomalies detected: {'missing_values': col2    0.272727
+col3    0.090909
+dtype: float64, 'outliers':     col1  col2   col3
+0    1.0   2.0    3.0
+7   22.0  23.0  100.0
+10  31.0  32.0   33.0}

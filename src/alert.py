@@ -10,5 +10,5 @@ def send_alert(anomalies):
     msg['To'] = ALERT_EMAIL
 
     # Send the email
-    with smtplib.SMTP('localhost') as server:
+    with smtplib.SMTP('localhost', 1025) as server:
         server.sendmail(ALERT_EMAIL, [ALERT_EMAIL], msg.as_string())
